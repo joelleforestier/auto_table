@@ -1,0 +1,14 @@
+# How to use auto_table #
+
+#import auto_table into your environment
+source("https://github.com/joelleforestier/auto_table/raw/main/auto_table.R")
+
+#specify the list of effect sizes between each "predictor" you have in mind and a single "DV"
+effects <- c(.30, .15, .22, .35)
+
+#put this list of effect sizes into a matrix in the style of a correlation table and view the matrix
+table <- auto_table(effects)
+table
+
+#you can alternatively specify the list of effect sizes within the auto_table function
+auto_table(c(.30, .15, .22, .35))
